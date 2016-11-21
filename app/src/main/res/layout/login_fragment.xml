@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:orientation="vertical">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:weightSum="1"
+                      android:padding="10dp"
+                      android:orientation="horizontal">
+
+            <TextView android:text="@string/lbl_user_name"
+                      android:padding="10dp"
+                      android:layout_height="wrap_content"
+                      android:gravity="start"
+                      android:layout_weight=".4"
+                      android:layout_marginRight="10dp"
+                      android:layout_marginEnd="10dp"
+                      android:id="@+id/login_txt_username"
+                      android:layout_width="0dp"/>
+
+            <EditText android:layout_height="wrap_content"
+                      android:layout_width="0dp"
+                      android:id="@+id/login_username"
+                      android:imeOptions="actionNext"
+                      android:inputType="textEmailAddress"
+                      android:hint="@string/lbl_hint_username"
+                      android:layout_weight=".6"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:weightSum="1"
+                      android:padding="10dp"
+                      android:orientation="horizontal">
+
+            <TextView android:text="@string/lbl_password"
+                      android:padding="10dp"
+                      android:layout_height="wrap_content"
+                      android:gravity="start"
+                      android:layout_weight=".4"
+                      android:layout_marginEnd="10dp"
+                      android:layout_marginRight="10dp"
+                      android:id="@+id/login_txt_password"
+                      android:layout_width="0dp"/>
+
+            <EditText android:layout_height="wrap_content"
+                      android:layout_width="0dp"
+                      android:id="@+id/login_password"
+                      android:inputType="textPassword"
+                      android:imeOptions="actionDone"
+                      android:hint="@string/lbl_hint_password"
+                      android:layout_weight=".6"/>
+        </LinearLayout>
+
+        <CheckBox android:layout_width="wrap_content"
+                  android:text="Remember me"
+                  android:padding="5dp"
+                  android:id="@+id/login_remember_me"
+                  android:layout_gravity="end"
+                  android:layout_height="wrap_content"/>
+
+
+        <Button android:layout_width="match_parent"
+                android:text="Sign In"
+                android:padding="5dp"
+                android:id="@+id/login_sign_in"
+                android:layout_height="wrap_content"/>
+
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/login_sign_up"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="end"
+                android:text="Sign Up Here"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.android.officecanteen.com.android.officecanteen.fragments.SignUpFragment">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:orientation="vertical">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:weightSum="1"
+                      android:orientation="horizontal">
+
+            <TextView android:text="@string/lbl_user_name"
+                      android:padding="10dp"
+                      android:layout_height="wrap_content"
+                      android:gravity="start"
+                      android:layout_weight=".4"
+                      android:layout_marginRight="10dp"
+                      android:layout_marginEnd="10dp"
+                      android:layout_width="0dp"/>
+
+            <EditText android:layout_height="wrap_content"
+                      android:layout_width="0dp"
+                      android:id="@+id/signup_username"
+                      android:imeOptions="actionNext"
+                      android:inputType="textEmailAddress"
+                      android:hint="@string/lbl_hint_username"
+                      android:layout_weight=".6"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:weightSum="1"
+                      android:orientation="horizontal">
+
+            <TextView android:text="@string/lbl_password"
+                      android:padding="10dp"
+                      android:layout_height="wrap_content"
+                      android:gravity="start"
+                      android:layout_weight=".4"
+                      android:layout_marginRight="10dp"
+                      android:layout_marginEnd="10dp"
+                      android:layout_width="0dp"/>
+
+            <EditText android:layout_height="wrap_content"
+                      android:layout_width="0dp"
+                      android:id="@+id/signup_password"
+                      android:imeOptions="actionNext"
+                      android:inputType="textEmailAddress"
+                      android:hint="@string/lbl_hint_password"
+                      android:layout_weight=".6"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:weightSum="1"
+                      android:orientation="horizontal">
+
+            <TextView android:text="@string/lbl_location"
+                      android:padding="10dp"
+                      android:layout_height="wrap_content"
+                      android:gravity="start"
+                      android:layout_weight=".4"
+                      android:layout_marginRight="10dp"
+                      android:layout_marginEnd="10dp"
+                      android:layout_width="0dp"/>
+
+            <EditText android:layout_height="wrap_content"
+                      android:layout_width="0dp"
+                      android:id="@+id/signup_location"
+                      android:imeOptions="actionNext"
+                      android:inputType="text"
+                      android:hint="@string/lbl_hint_location"
+                      android:layout_weight=".6"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:weightSum="1"
+                      android:orientation="horizontal">
+
+            <TextView android:text="@string/lbl_mobile"
+                      android:padding="10dp"
+                      android:layout_height="wrap_content"
+                      android:gravity="start"
+                      android:layout_weight=".4"
+                      android:layout_marginRight="10dp"
+                      android:layout_marginEnd="10dp"
+                      android:layout_width="0dp"/>
+
+            <EditText android:layout_height="wrap_content"
+                      android:layout_width="0dp"
+                      android:id="@+id/signup_mobile"
+                      android:imeOptions="actionNext"
+                      android:inputType="number"
+                      android:hint="@string/lbl_hint_mobile"
+                      android:layout_weight=".6"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:weightSum="1"
+                      android:orientation="horizontal">
+
+            <TextView android:text="@string/lbl_company"
+                      android:padding="10dp"
+                      android:layout_height="wrap_content"
+                      android:gravity="start"
+                      android:layout_weight=".4"
+                      android:layout_marginRight="10dp"
+                      android:layout_marginEnd="10dp"
+                      android:layout_width="0dp"/>
+
+            <EditText android:layout_height="wrap_content"
+                      android:layout_width="0dp"
+                      android:id="@+id/signup_company"
+                      android:imeOptions="actionNext"
+                      android:inputType="text"
+                      android:hint="@string/lbl_hint_organization"
+                      android:layout_weight=".6"/>
+        </LinearLayout>
+        <Button android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_btn_signup"
+                android:id="@+id/btn_sign_up"/>
+    </LinearLayout>
+</RelativeLayout>

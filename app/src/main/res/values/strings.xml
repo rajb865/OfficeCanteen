@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">OfficeCanteen</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="lbl_user_name">Username</string>
+    <string name="lbl_hint_password">Password</string>
+    <string name="lbl_hint_username">Username</string>
+    <string name="lbl_password">Password</string>
+    <string name="lbl_location">Location</string>
+    <string name="lbl_hint_location">Location</string>
+    <string name="lbl_mobile">Mobile</string>
+    <string name="lbl_hint_mobile">Mobile</string>
+    <string name="lbl_company">Company</string>
+    <string name="lbl_hint_organization">Organization</string>
+    <string name="lbl_btn_signup">Sign Up</string>
+</resources>
